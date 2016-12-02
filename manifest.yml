@@ -1,0 +1,9 @@
+---
+applications:
+- name: read-env-vars 
+  memory: 512M
+  host: read-env-vars 
+  path: target/read-env-vars-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack
+  env:
+    SERVER_TOMCAT_MAX_THREADS: 150
